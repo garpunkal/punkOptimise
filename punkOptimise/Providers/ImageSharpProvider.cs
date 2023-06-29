@@ -43,6 +43,8 @@ namespace punkOptimise.Providers
             {
                 try
                 {
+                    if (data == null) return null;
+
                     using MemoryStream ms = new();
 
                     IImageEncoder imageEncoderForJpeg = new JpegEncoder()

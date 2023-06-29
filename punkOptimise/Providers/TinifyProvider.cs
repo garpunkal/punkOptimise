@@ -39,7 +39,9 @@ namespace punkOptimise.Providers
         {
             try
             {
-                if (!string.IsNullOrWhiteSpace(_optimiseConfiguration.TinyPng.ApiKey))
+                if (data == null) return null; 
+
+                if (!string.IsNullOrWhiteSpace(_optimiseConfiguration.TinyPng?.ApiKey))
                 {
                     Tinify.Key = _optimiseConfiguration.TinyPng.ApiKey;
                     return await Tinify.FromBuffer(data).ToBuffer();
