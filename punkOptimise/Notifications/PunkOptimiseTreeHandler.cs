@@ -17,7 +17,7 @@ namespace punkOptimise.Notifications
                         notification.NodeId != Constants.System.Root.ToString())
                     {
 
-                        var optimise = new MenuItem("optimiseNode", "punkOptimise");
+                        var optimise = new MenuItem("optimiseNode", "Optimise");
                         optimise.AdditionalData.Add("actionView", "/App_Plugins/punkOptimise/backoffice/punkOptimise.html");
                         optimise.Icon = "scan color-deep-purple";
                         notification.Menu.Items.Add(optimise);
