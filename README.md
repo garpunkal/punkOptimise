@@ -22,7 +22,7 @@ An action in Umbraco that allows you optimise your media using multiple provider
 - Add the following configuration element
 
 ~~~json
- "OptimiseConfiguration": {
+ "Optimise": {
     "Quality": 60,
     "TinyPng": {
       "ApiKey": "",      
