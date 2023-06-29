@@ -43,7 +43,7 @@ namespace punkOptimise.Providers
             {
                 try
                 {
-                    if (data == null) return null;
+                    if (data == null) throw new ArgumentNullException(nameof(data));
 
                     using MemoryStream ms = new();
 

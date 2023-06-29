@@ -1,10 +1,8 @@
-﻿using CSharpTest.Net.Interfaces;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using punkOptimise.Extensions;
 using punkOptimise.Interfaces;
 using punkOptimise.Models;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using System;
 using System.IO;
 using System.Threading;
@@ -17,7 +15,6 @@ using Umbraco.Cms.Core.Services;
 using Umbraco.Cms.Core.Strings;
 using Umbraco.Cms.Web.BackOffice.Controllers;
 using Umbraco.Cms.Web.Common.Attributes;
-using Umbraco.Extensions;
 
 namespace punkOptimise.Controllers
 {

@@ -39,7 +39,7 @@ namespace punkOptimise.Providers
         {
             try
             {
-                if (data == null) return null; 
+                if (data == null) throw new ArgumentNullException(nameof(data)); 
 
                 if (!string.IsNullOrWhiteSpace(_optimiseConfiguration.TinyPng?.ApiKey))
                 {
