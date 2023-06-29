@@ -2,13 +2,13 @@
 
 [![NuGet release](https://img.shields.io/nuget/v/punkOptimise.svg)](https://www.nuget.org/packages/punkOptimise/)
 
-An action in Umbraco that allows you optimise your media using multiple providers
+A package for Umbraco that allows you to optimise your media using different providers.
 
 ## Usage 
 
 - Install the package via nuget.
 
-- Add .AddOptimise() to your startup file: 
+- Add .AddOptimise() in your startup file: 
 
 ~~~csharp 
   services
@@ -19,7 +19,7 @@ An action in Umbraco that allows you optimise your media using multiple provider
         .Build();
 ~~~
 
-- Add the following configuration element
+- Add the following configuration element to your appsettings.json
 
 ~~~json
  "Optimise": {
@@ -32,7 +32,7 @@ An action in Umbraco that allows you optimise your media using multiple provider
 Update the ApiKey property with your API key from https://tinypng.com/developers
 
 
-- Run Umbraco and they'll be a new action for Media to optimise. 
+- Run Umbraco and there will be a new tree node action on media items to optimise. 
 
 
 ## Nuget
