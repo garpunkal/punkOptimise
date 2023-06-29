@@ -7,8 +7,8 @@
 		<Product>punkOptimise</Product>
 		<PackageId>punkOptimise</PackageId>
 		<Title>punkOptimise</Title>
-		<Description>An plugin for Umbraco that allows you to optimise your media using providers.</Description>
-		<PackageTags>umbraco plugin package</PackageTags>
+		<Description>A package for Umbraco that allows you to optimise your media using different providers.</Description>
+		<PackageTags>umbraco-marketplace</PackageTags>
 		<RootNamespace>punkOptimise</RootNamespace>
 		<Authors>garpunkal</Authors>
 		<PackageProjectUrl>https://github.com/garpunkal/punkOptimise</PackageProjectUrl>

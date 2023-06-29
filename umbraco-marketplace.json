@@ -1,6 +1,6 @@
 {
   "Title": "punkOptimise",
-  "Description": "An plugin for Umbraco that allows you to optimise your media using providers.",
+  "Description": "A package for Umbraco that allows you to optimise your media using different providers.",
   "Category": "Editor Tools",
   "Tags": [ "Media", "Images", "punkOptimise" ],
   "LicenseTypes": [ "Free" ],
