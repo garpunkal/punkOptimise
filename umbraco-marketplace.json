@@ -1,0 +1,23 @@
+{
+  "Title": "punkOptimise",
+  "Description": "An plugin for Umbraco that allows you to optimise your media using providers.",
+  "Category": "Editor Tools",
+  "Tags": [ "Media", "Images", "punkOptimise" ],
+  "LicenseTypes": [ "Free" ],
+  "PackageType": "Package",
+  "AuthorDetails": {
+    "Name": "Gareth Wright",
+    "Url": "https://garpunkal.dev",
+    "ImageUrl": "https://github.com/garpunkal.png",
+    "SyncContributorsFromRepository": true
+  },
+  "DocumentationUrl": "https://github.com/garpunkal/punkOptimise",
+  "IssueTrackerUrl": "https://github.com/garpunkal/punkOptimise/issues",
+  "Screenshots": [
+    {
+      "ImageUrl": "https://raw.github.com/garpunkal/punkOptimise/main/listview.jpg",
+      "Caption": "ListView"
+    }
+   
+  ]
+}

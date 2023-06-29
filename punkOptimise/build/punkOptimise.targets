@@ -1,0 +1,28 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <PunkOptimiseContentFilesPath>$(MSBuildThisFileDirectory)..\App_Plugins\punkOptimise\**\*.*</PunkOptimiseContentFilesPath>
+    </PropertyGroup>
+
+    <Target Name="CopyPunkOptimiseAssets" BeforeTargets="Build">
+        <ItemGroup>
+            <PunkOptimiseContentFiles Include="$(PunkOptimiseContentFilesPath)" />
+        </ItemGroup>
+        <Message Text="Copying punkOptimise files: $(PunkOptimiseContentFilesPath) - #@(PunkOptimiseContentFiles->Count()) files"  Importance="high" />
+        <Copy
+            SourceFiles="@(PunkOptimiseContentFiles)"
+            DestinationFiles="@(PunkOptimiseContentFiles->'$(MSBuildProjectDirectory)\App_Plugins\punkOptimise\%(RecursiveDir)%(Filename)%(Extension)')"
+            SkipUnchangedFiles="true" />
+
+    </Target>
+
+    <Target Name="ClearPunkOptimiseAssets" BeforeTargets="Clean">
+        <ItemGroup>
+            <PunkOptimiseDir Include="$(MSBuildProjectDirectory)\App_Plugins\punkOptimise\" />
+        </ItemGroup>
+        <Message Text="Clear old punkOptimise data"  Importance="high" />
+        <RemoveDir Directories="@(PunkOptimiseDir)"  />
+    </Target>
+
+</Project>
+ 

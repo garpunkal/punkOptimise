@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<TargetFramework>net6.0</TargetFramework>
+		<ContentTargetFolders>.</ContentTargetFolders>
+		<Product>punkOptimise</Product>
+		<PackageId>punkOptimise</PackageId>
+		<Title>punkOptimise</Title>
+		<Description>An plugin for Umbraco that allows you to optimise your media using providers.</Description>
+		<PackageTags>umbraco plugin package</PackageTags>
+		<RootNamespace>punkOptimise</RootNamespace>
+		<Authors>garpunkal</Authors>
+		<PackageProjectUrl>https://github.com/garpunkal/punkOptimise</PackageProjectUrl>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageIcon>logo.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/garpunkal/punkOptimise</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<AssemblyName>$(MSBuildProjectName)</AssemblyName>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Svg" Version="3.4.4" />
+		<PackageReference Include="Tinify" Version="1.6.0" />
+		<PackageReference Include="Umbraco.Cms" Version="10.4.0" />
+		<PackageReference Include="Umbraco.Cms.Web.Common" Version="10.4.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="App_Plugins\punkOptimise\**\*.*">
+			<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+			<CopyToPublishDirectory>Always</CopyToPublishDirectory>
+		</Content>
+		<None Include="build\**\*.*">  
+			<Pack>True</Pack>
+			<PackagePath>buildTransitive</PackagePath>
+		</None>
+		<Compile Remove="App_Plugins\punkOptimise\**" />
+		<EmbeddedResource Remove="App_Plugins\punkOptimise\**" />
+		<None Remove="App_Plugins\punkOptimise\**" />
+	</ItemGroup>
+
+</Project>  
