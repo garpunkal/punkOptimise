@@ -1,5 +1,4 @@
-﻿using punkOptimise.Models;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace punkOptimise.Extensions
@@ -9,7 +8,7 @@ namespace punkOptimise.Extensions
         public static Models.PunkOptimiseConfiguration ConfigureOptimiseConfig(
             this IServiceCollection services, 
             IConfiguration config,
-            string configName = "punkOptimiseConfiguration")
+            string configName = "punkOptimise")
         {
             services.Configure<Models.PunkOptimiseConfiguration>(config.GetSection(configName));
             Models.PunkOptimiseConfiguration optimiseConfig = new();

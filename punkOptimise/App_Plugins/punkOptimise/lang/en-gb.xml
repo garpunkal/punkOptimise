@@ -3,8 +3,8 @@
 
   <area alias="punkOptimise">
     <key alias="cancel"><![CDATA[Cancel]]></key>
-    <key alias="optimiseImage"><![CDATA[punkOptimise]]></key>
-    <key alias="save"><![CDATA[punkOptimise]]></key>
+    <key alias="optimiseImage"><![CDATA[Optimise]]></key>
+    <key alias="save"><![CDATA[Optimise]]></key>
     <key alias="notvalid"><![CDATA[Unfortunately this image isn't suitable for optimising.]]></key>
     <key alias="itemisntsuitable"><![CDATA[Unfortunately this item isn't suitable for optimising.]]></key>
     <key alias="image"><![CDATA[Image:]]></key>
