@@ -15,8 +15,12 @@
   "IssueTrackerUrl": "https://github.com/garpunkal/punkOptimise/issues",
   "Screenshots": [
     {
-      "ImageUrl": "https://raw.github.com/garpunkal/punkOptimise/main/listview.jpg",
-      "Caption": "ListView"
+      "ImageUrl": "https://raw.github.com/garpunkal/punkOptimise/main/context-menu.png",
+      "Caption": "Action"
+    },
+    {
+      "ImageUrl": "https://raw.github.com/garpunkal/punkOptimise/main/context-menu-action.png",
+      "Caption": "Context Menu"
     }
    
   ]
