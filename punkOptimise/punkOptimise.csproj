@@ -22,8 +22,8 @@
 	<ItemGroup>
 		<PackageReference Include="Svg" Version="3.4.4" />
 		<PackageReference Include="Tinify" Version="1.6.0" />
-		<PackageReference Include="Umbraco.Cms" Version="10.6.1" />
-		<PackageReference Include="Umbraco.Cms.Web.Common" Version="10.6.1" />
+		<PackageReference Include="Umbraco.Cms" Version="10.7.0" />
+		<PackageReference Include="Umbraco.Cms.Web.Common" Version="10.7.0" />
 	</ItemGroup>
 
 	<ItemGroup>
